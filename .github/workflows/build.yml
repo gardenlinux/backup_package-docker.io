@@ -1,0 +1,8 @@
+name: docker.io
+on: push
+jobs:
+  build_pkg:
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
+    with:
+      build_options: nocheck
+      build_profiles: nocheck
